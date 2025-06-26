@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Detail - ShopEase</title>
+</head>
+<body>
+  <header>
+    <h1 onclick="goToHome()">ShopEase</h1>
+    <div onclick="goToCart()">🛒 Cart</div>
+  </header>
+  <h2>Smartphone</h2>
+  <img src="https://via.placeholder.com/300" alt="Smartphone">
+  <p>Price: $299</p>
+  <p>High-quality smartphone with 6.5" screen, 128GB storage, and 5G support.</p>
+  <button onclick="addToCart()">Add to Cart</button>
+  <button onclick="buyNow()">Buy Now</button>
+  <div onclick="goToListing()">🔙 Back to Products</div>
+
+  <script>
+    function goToHome() { window.location.href = 'index.html'; }
+    function goToCart() { window.location.href = 'cart.html'; }
+    function goToListing() { window.location.href = 'listing.html'; }
+    function addToCart() { alert('Added to cart!'); }
+    function buyNow() { window.location.href = 'checkout.html'; }
+  </script>
+</body>
+</html>
